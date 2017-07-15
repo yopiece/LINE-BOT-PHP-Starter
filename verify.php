@@ -4,7 +4,8 @@ $access_token = '+Z9LkiZT8lXXpTpS814akaFE
 3yfRjUOQ98QDlB8gbAEkUuyot9epPuQMIEAzYNHir
 OgnUlLAJ6WXRJZdxaQRJKWonL5myR1VHpFjz99ytk
 vhAdB04t89/1O/w1cDnyilFU=';
-
+curl -X GET \
+-H 'Authorization: Bearer {ENTER_ACCESS_TOKEN}' \
 $url = 'https://api.line.me/v1/oauth/verify';
 
 $headers = array('Authorization: Bearer ' . $access_token);
